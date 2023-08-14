@@ -1,0 +1,4 @@
+Algoritmo HolaMundo
+	Leer Nombre
+	Escribir "Hola Mundo",Nombre
+FinAlgoritmo
