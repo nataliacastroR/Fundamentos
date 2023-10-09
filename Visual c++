@@ -1,0 +1,19 @@
+//Autor_NathaliaCastro
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N;
+    float suma = 0, impar;
+    do {
+        cout << "Ingre el valor de N: ";
+        cin >> N;
+    } while (N <= 0);
+    for (int i = 1; i <= N; i= i+2)
+    {
+        cout << i << "+";
+        suma = suma + i;
+    }
+    cout << endl << "La sumatoria es: "<< suma;
+    return 0;
