@@ -1,0 +1,28 @@
+// digito funcion.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+int Digito(int numero); // Prototipo
+
+int main() {
+    int Numero, X, suma = 0, digito;
+    do {
+        cout << "ingrese el numero";
+        cin >> Numero;
+    } while (Numero <= 0);
+    X = Numero;
+    while (Numero != 0)
+    {
+        digito = Digito(Numero);
+        suma = suma + digito;
+        Numero = Numero / 10;
+    }
+    cout << "La suma de los digitos es" << X <<" es:" << suma;
+}
+
+int Digito(int numero)// declaracion de la funcion 
+{
+    int x = numero % 10;
+    return x;
+}
