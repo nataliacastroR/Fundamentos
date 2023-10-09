@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int principal()
+{
+    float lado,área;
+    cout<<"Ingresar el lado";
+    cin >>lado;
+    area=lado*lado;
+    cout<<"El Área es:"<<area;
+    return 0;
+}
