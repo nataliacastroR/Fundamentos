@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int principal()
+{
+    float parcial1,parcial2,parcial3,proyectofinal,examenfinal,Notafinal;
+    cout<<"Ingresar el primer parcial 1:";
+    cin>>parcial1;
+    cout<<"Ingresar el primer parcial 2:";
+    cin>>parcial2;
+    cout<<"Ingresar el primer parcial 3:";
+    cin>>parcial3;
+    cout<<"Ingresar el proyecto final:";
+    cin>>proyectofinal;
+    cout<<"Ingresar el examen final:";
+    cin>>examenfinal;
+    Notafinal=((parcial1+parcial2+parcial3)/3)*0.4+proyectofinal*0.2+examenfinal*0.4;
+    cout<<"La nota final es:"<<Nota final;
+    si(Notafinal >=51)
+      cout<< "esta aprobado";
+      else
+      cout<< "reprobo la materia";
+    return 0;
+}
