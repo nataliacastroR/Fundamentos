@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float Gine, Traum, Ped, PA;
+    cout<<"El presupuesto anual es:"<<endl;
+    cin>> PA ;
+    Gine = PA*0.40 ;
+    Traum = PA*0.30;
+    Ped = PA*0.30;
+    cout<<"Ginecologia recibira:"<<endl;
+    cout<<"Traumatologia recibira:"<<endl;
+    cout<<"Pediatria recibira:"<<endl;
+    return 0;
+}
