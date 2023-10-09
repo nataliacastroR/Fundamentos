@@ -1,0 +1,15 @@
+#incluir <iostream>
+
+usando el espacio de nombres estándar;
+
+int principal()
+{
+    radio flotante,pi,área;
+    cout<<"Ingresar la radio";
+    cin>>radio;
+    pi=3,141516;
+    área=pi*radio*radio;
+    cout<<"El Área es:"<<area;
+
+    devolver 0;
+}
