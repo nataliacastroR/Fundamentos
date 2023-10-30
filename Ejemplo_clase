@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include "Usuario.h"
+
+int main()
+{
+    // Crear un objeto de la clase Usuario
+    Usuario usuario("kinfantas", "mipassword");
+
+    // Pedir al usuario que ingrese el login y la contraseña
+    string inputLogin, inputPassword;
+    cout << "Ingrese su nombre de usuario: ";
+    cin >> inputLogin;
+    cout << "Ingrese su contraseña: ";
+    cin >> inputPassword;
+
+    // Verificar el inicio de sesión
+    if (usuario.verificarLogin(inputLogin, inputPassword)) {
+        std::cout << "Inicio de sesión exitoso. ¡Bienvenido!";
+    }
+    else {
+        std::cout << "Inicio de sesión fallido. Usuario o contraseña incorrectos.";
+    }
+
+    return 0;
+}
