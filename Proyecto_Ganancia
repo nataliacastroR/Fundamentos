@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int calcularIngresosTotales(int nS, int nR, int nP) {
+     int precioSuscripcion = 30;
+     int precioReparacion = 50;
+     int precioPublicidad = 20;
+
+    int ingresosTotales = (precioSuscripcion * nS) + (precioReparacion * nR) + (precioPublicidad * nP);
+
+    return ingresosTotales;
+}
+
+int main() {
+    int nS, nR, nP;
+    cout << "Ingrese la cantidad de suscripciones: ";
+    cin >> nS;
+    cout << "Ingrese la cantidad de reparaciones: ";
+    cin >> nR;
+    cout<< "Ingrese la cantidad de acuerdos publicitarios: ";
+    cin >> nP;
+
+    int ingresosTotales = calcularIngresosTotales(nS, nR, nP);
+    cout << "Ingresos Totales: $" << ingresosTotales <<endl;
+
+    return 0;
+}
